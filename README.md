@@ -1,5 +1,5 @@
 # File-browser
 Simple file browser
 
-#### Tech Stack:
+#### 🧰 Tech Stack:
 Nodejs, Electron

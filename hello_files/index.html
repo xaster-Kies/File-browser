@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Browser</title>
+</head>
+<body>
+    <p>
+      <input type="button" value="Reload the app after the changing code" onClick="window">
+    </p>
+    <div id="app">
+      <p>{{location}}</p>
+      <button @click="up"></button>
+      <listing v-for="file in files" v-bind:key="file.id" v-bind:item="file"></listing>
+      <p><img v-bind:src="image"/></p>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+      require('./require.js')
+    </script>
+</body>
+</html>
